@@ -7,7 +7,7 @@ import {
   IconBrandInstagram,
 } from "@tabler/icons-react";
 import { MantineLogo } from "@mantine/ds";
-import classes from "./footer.css";
+import classes from "./footer.module.css";
 
 const data = [
   {
@@ -66,42 +66,39 @@ const Footer = () => {
       <Container className={classes.inner}>
         <div className={classes.logo}>
           <MantineLogo size={30} />
-          <Text size="xs" c="dimmed" className={classes.description}>
-            Build fully functional accessible web applications faster than ever
+          <Text size="xs" className={classes.description}>
+            Lorem ipsum dolor sit amet consectetur. Sapien euismod arcu mattis
+            quam sed sem vitae quam. Maecenas tristique amet enim amet
+            elementum. Risus tellus justo praesent sed lacus tortor varius neque
+            nullam. In sit nec condimentum euismod erat nibh aliquam.
           </Text>
+          <Group gap={0} className={classes.social} wrap="nowrap">
+            <ActionIcon size="lg" color="gray" variant="subtle">
+              <IconBrandTwitter
+                style={{ width: rem(18), height: rem(18) }}
+                stroke={1.5}
+              />
+            </ActionIcon>
+            <ActionIcon size="lg" color="gray" variant="subtle">
+              <IconBrandYoutube
+                style={{ width: rem(18), height: rem(18) }}
+                stroke={1.5}
+              />
+            </ActionIcon>
+            <ActionIcon size="lg" color="gray" variant="subtle">
+              <IconBrandInstagram
+                style={{ width: rem(18), height: rem(18) }}
+                stroke={1.5}
+              />
+            </ActionIcon>
+          </Group>
         </div>
         <div className={classes.groups}>{groups}</div>
       </Container>
       <Container className={classes.afterFooter}>
-        <Text c="dimmed" size="sm">
+        <Text c="white" size="sm">
           © 2020 mantine.dev. All rights reserved.
         </Text>
-
-        <Group
-          gap={0}
-          className={classes.social}
-          justify="flex-end"
-          wrap="nowrap"
-        >
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandTwitter
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandYoutube
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandInstagram
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-        </Group>
       </Container>
     </footer>
   );

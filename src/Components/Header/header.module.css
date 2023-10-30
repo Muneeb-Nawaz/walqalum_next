@@ -1,9 +1,23 @@
+.headerWrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+
+.headerTop{
+  background: #1D5477;
+  padding: 18px 80px;
+}
+
+.phone {
+  height:24px;
+}
+
 .header {
-  height: rem(60px);
-  padding-left: var(--mantine-spacing-md);
-  padding-right: var(--mantine-spacing-md);
-  border-bottom: rem(1px) solid
-    light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  padding: 32px 80px;
+  
 }
 
 .link {
@@ -13,9 +27,9 @@
   padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
   text-decoration: none;
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-weight: 500;
-  font-size: var(--mantine-font-size-sm);
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px ;
 
   @media (max-width: $mantine-breakpoint-sm) {
     height: rem(42px);
@@ -55,29 +69,6 @@
   border-top: rem(1px) solid
     light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
 }
-.price {
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-}
 
-.carousel {
-  @mixin hover {
-    .carouselControls {
-      opacity: 1;
-    }
-  }
-}
 
-.carouselControls {
-  transition: opacity 150ms ease;
-  opacity: 0;
-}
 
-.carouselIndicator {
-  width: rem(4px);
-  height: rem(4px);
-  transition: width 250ms ease;
-
-  &[data-active] {
-    width: rem(16px);
-  }
-}

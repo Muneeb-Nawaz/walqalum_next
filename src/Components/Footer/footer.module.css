@@ -1,17 +1,14 @@
 .footer {
   margin-top: rem(120px);
   padding-top: calc(var(--mantine-spacing-xl) * 2);
-  padding-bottom: calc(var(--mantine-spacing-xl) * 2);
-  background-color: light-dark(
-    var(--mantine-color-gray-0),
-    var(--mantine-color-dark-6)
-  );
+  padding-bottom: 0;
+  background-color:#1D5477;
   border-top: rem(1px) solid
     light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
 }
 
 .logo {
-  max-width: rem(200px);
+  max-width: rem(378px);
 
   @media (max-width: $mantine-breakpoint-sm) {
     display: flex;
@@ -22,7 +19,10 @@
 
 .description {
   margin-top: rem(5px);
-
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
   @media (max-width: $mantine-breakpoint-sm) {
     margin-top: var(--mantine-spacing-xs);
     text-align: center;
@@ -32,7 +32,8 @@
 .inner {
   display: flex;
   justify-content: space-between;
-
+  max-width: 100%;
+  padding: 0 80px;
   @media (max-width: $mantine-breakpoint-sm) {
     flex-direction: column;
     align-items: center;
@@ -54,8 +55,8 @@
 
 .link {
   display: block;
-  color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-dark-1));
-  font-size: var(--mantine-font-size-sm);
+  color: #fff;
+  font-size: 16px;
   padding-top: rem(3px);
   padding-bottom: rem(3px);
 
@@ -65,22 +66,24 @@
 }
 
 .title {
-  font-size: var(--mantine-font-size-lg);
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 400;
   font-family: Greycliff CF, var(--mantine-font-family);
   margin-bottom: calc(var(--mantine-spacing-xs) / 2);
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  color: #fff;
 }
 
 .afterFooter {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: var(--mantine-spacing-xl);
   padding-top: var(--mantine-spacing-xl);
   padding-bottom: var(--mantine-spacing-xl);
   border-top: rem(1px) solid
     light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-4));
+  max-width: 100%;
+  padding: 32px 80px;
 
   @media (max-width: $mantine-breakpoint-sm) {
     flex-direction: column;
@@ -88,6 +91,7 @@
 }
 
 .social {
+  padding-top: 36px;
   @media (max-width: $mantine-breakpoint-sm) {
     margin-top: var(--mantine-spacing-xs);
   }
