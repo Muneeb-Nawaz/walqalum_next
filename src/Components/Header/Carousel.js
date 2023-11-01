@@ -13,9 +13,9 @@ const images = [
 ];
 
 export function CarouselCard() {
-  const slides = images.map((image) => (
+  const slides = images.map((image, id) => (
     <Carousel.Slide key={image}>
-      <Image src={image} height={220} alt="slider images" />
+      <Image src={image} alt="slider images" />
     </Carousel.Slide>
   ));
 
@@ -23,6 +23,7 @@ export function CarouselCard() {
     <Card radius="md" withBorder padding="xl">
       <Card.Section>
         <Carousel
+          height={220}
           withIndicators
           loop
           classNames={{
